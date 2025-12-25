@@ -19,7 +19,7 @@ public class appartment {
         int i=0,j=0;
         while(i<n && j<m){
             int diff=apl[i]-app[j];
-            if(diff<k && diff>-k){
+            if(Math.abs(diff) <= k){
                 count++;
                 i++;
                 j++;
